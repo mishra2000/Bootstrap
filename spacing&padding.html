@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>spacing&padding</title>
+  </head>
+  <body>
+    <h3>Spacing and padding in bootstrap 4.1</h3>
+    <hr />
+    <h5>This is the default margin and padding for paragraph</h5>
+    <p class="bg-info">This is a paragraph</p>
+    <p class="bg-warning">This is a paragraph</p>
+    <p class="bg-success">This is a paragraph</p>
+    <h5>Let's change some margins</h5>
+    <p class="bg-info mb-0">Margin bottom set to 0</p>
+    <p class="bg-warning ml-1">Margin left set to 1</p>
+    <p class="bg-success mr-2">Margin right set to 2</p>
+    <p class="bg-success m-5">All side margin set to 5</p>
+    <hr />
+    <h5>We can also use breakpoints in margins</h5>
+    <hr />
+    <h6>
+      Suppose we want left margin 1 for xs device and 3 left below md devices,
+      and 5 left margin upto xl devices
+    </h6>
+    <!-- xs have margin 1, sm-and above sm have margin 3, md-and above md have margin 5 -->
+    <p class="bg-success ml-1 ml-sm-3 ml-md-5">
+      This paragraph have responsive margin
+    </p>
+    <hr />
+    <h5>Let's change some padding</h5>
+    <span>Padding bottom zero example</span>
+    <p class="bg-info pb-0">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sed? Quae,
+      aliquam itaque magnam consequatur mollitia odit quidem expedita reiciendis
+      cum, ad nisi officiis necessitatibus quod doloribus molestias nihil
+      commodi? Vitae odio dolores, voluptates harum quidem, voluptatibus non
+      aperiam eius possimus ut dicta distinctio sed officiis, consequatur
+      architecto porro deserunt nihil repudiandae! Eos officiis architecto ab
+      vitae repellendus quibusdam dignissimos adipisci, iure corporis amet!
+      Nemo, quis sed ipsa accusamus architecto eius. Dicta sequi iste cumque
+      deleniti molestias dolores nemo, facere, reprehenderit quaerat amet
+      explicabo neque maxime repellendus molestiae earum dolor alias numquam.
+      Laboriosam quas laudantium perferendis ratione reprehenderit expedita qui.
+    </p>
+    <span>Padding left 1 example</span>
+    <p class="bg-warning pl-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sed? Quae,
+      aliquam itaque magnam consequatur mollitia odit quidem expedita reiciendis
+      cum, ad nisi officiis necessitatibus quod doloribus molestias nihil
+      commodi? Vitae odio dolores, voluptates harum quidem, voluptatibus non
+      aperiam eius possimus ut dicta distinctio sed officiis, consequatur
+      architecto porro deserunt nihil repudiandae! Eos officiis architecto ab
+      vitae repellendus quibusdam dignissimos adipisci, iure corporis amet!
+      Nemo, quis sed ipsa accusamus architecto eius. Dicta sequi iste cumque
+      deleniti molestias dolores nemo, facere, reprehenderit quaerat amet
+      explicabo neque maxime repellendus molestiae earum dolor alias numquam.
+      Laboriosam quas laudantium perferendis ratione reprehenderit expedita qui.
+    </p>
+    <span>Padding right 2 example</span>
+    <p class="bg-success pr-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sed? Quae,
+      aliquam itaque magnam consequatur mollitia odit quidem expedita reiciendis
+      cum, ad nisi officiis necessitatibus quod doloribus molestias nihil
+      commodi? Vitae odio dolores, voluptates harum quidem, voluptatibus non
+      aperiam eius possimus ut dicta distinctio sed officiis, consequatur
+      architecto porro deserunt nihil repudiandae! Eos officiis architecto ab
+      vitae repellendus quibusdam dignissimos adipisci, iure corporis amet!
+      Nemo, quis sed ipsa accusamus architecto eius. Dicta sequi iste cumque
+      deleniti molestias dolores nemo, facere, reprehenderit quaerat amet
+      explicabo neque maxime repellendus molestiae earum dolor alias numquam.
+      Laboriosam quas laudantium perferendis ratione reprehenderit expedita qui.
+    </p>
+    <span>Padding all side 5 example</span>
+    <p class="bg-success p-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sed? Quae,
+      aliquam itaque magnam consequatur mollitia odit quidem expedita reiciendis
+      cum, ad nisi officiis necessitatibus quod doloribus molestias nihil
+      commodi? Vitae odio dolores, voluptates harum quidem, voluptatibus non
+      aperiam eius possimus ut dicta distinctio sed officiis, consequatur
+      architecto porro deserunt nihil repudiandae! Eos officiis architecto ab
+      vitae repellendus quibusdam dignissimos adipisci, iure corporis amet!
+      Nemo, quis sed ipsa accusamus architecto eius. Dicta sequi iste cumque
+      deleniti molestias dolores nemo, facere, reprehenderit quaerat amet
+      explicabo neque maxime repellendus molestiae earum dolor alias numquam.
+      Laboriosam quas laudantium perferendis ratione reprehenderit expedita qui.
+    </p>
+    <hr />
+    <h5>We can also use breakpoints in padding</h5>
+    <hr />
+    <h6>
+      Suppose we want left padding 1 for xs device and 3 left below md devices,
+      and 5 left padding upto xl devices
+    </h6>
+    <!-- xs have padding 1, sm-and above sm have padding 3, md-and above md have padding 5 -->
+    <p class="bg-success pl-1 pl-sm-3 pl-md-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, sed? Quae,
+      aliquam itaque magnam consequatur mollitia odit quidem expedita reiciendis
+      cum, ad nisi officiis necessitatibus quod doloribus molestias nihil
+      commodi? Vitae odio dolores, voluptates harum quidem, voluptatibus non
+      aperiam eius possimus ut dicta distinctio sed officiis, consequatur
+      architecto porro deserunt nihil repudiandae! Eos officiis architecto ab
+      vitae repellendus quibusdam dignissimos adipisci, iure corporis amet!
+      Nemo, quis sed ipsa accusamus architecto eius. Dicta sequi iste cumque
+      deleniti molestias dolores nemo, facere, reprehenderit quaerat amet
+      explicabo neque maxime repellendus molestiae earum dolor alias numquam.
+      Laboriosam quas laudantium perferendis ratione reprehenderit expedita qui.
+    </p>
+  </body>
+</html>
