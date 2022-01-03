@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Breakpoints</title>
+  </head>
+  <body>
+    <h3>There are breakpoints in screen, they are defined below</h3>
+    <h5>
+      xs <kbd><576px<=</kbd> sm <kbd><768px<=</kbd> md <kbd><992px<=</kbd> ls
+      <kbd><1200px<=</kbd> xl
+    </h5>
+  </body>
+
+  <hr />
+  <h4>
+    Let us try to center align a paragraph for breakpoints on and above
+    <kbd> &nbsp;sm </kbd>&nbsp;screen size
+  </h4>
+  <h4 class="text-sm-center bg-success">
+    This will be in center (but not for xs screen size)
+  </h4>
+  <hr />
+  <h4>
+    Let us try to center align a paragraph on
+    <kbd> &nbsp;sm </kbd>&nbsp;screen size and left align on rest sizes
+  </h4>
+  <h4 class="text-sm-center text-md-left bg-success">
+    In center only for <kbd>sm</kbd> screen size
+  </h4>
+</html>
