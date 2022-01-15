@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    /> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .container1 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: aquamarine;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .item {
+        padding: 20px;
+        background: brown;
+        text-align: center;
+        color: white;
+        margin: 10px;
+      }
+    </style>
+    <title>Flex-items</title>
+  </head>
+  <body>
+    <h3>We will tweak code in this layout and will see the changes</h3>
+    <hr />
+    <div class="container1">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h3>Let us understand order property</h3>
+    <small
+      >Elements are arrenged acording to numberline( value being order)</small
+    >
+    <hr />
+    <div class="container1" style="flex-wrap: wrap">
+      <div class="item" style="order: 5">Order 5</div>
+      <div class="item">Order 0</div>
+      <div class="item">Order 0</div>
+      <div class="item">Order 0</div>
+      <div class="item" style="order: -1">order -1</div>
+    </div>
+
+    <h3>
+      Let us understand "align-self" property (best understood in full width)
+    </h3>
+    <hr />
+    <div class="container1" style="flex-wrap: nowrap">
+      <div class="item" style="align-self: flex-start">flex-start</div>
+      <div class="item" style="align-self: center">center</div>
+      <div class="item" style="align-self: flex-end">flex-end</div>
+      <div class="item" style="align-self: stretch">stretch</div>
+      <div class="item" style="align-self: baseline">baseline</div>
+    </div>
+
+    <h3>
+      Let us understand "flex-grow" property, its default value is 0 (best
+      understood with variying width)
+    </h3>
+    <hr />
+    <h5>
+      Flex-grow defines the rate with with the elements will increase its size
+      on change of dimension of its parent
+    </h5>
+    <div class="container1" style="flex-wrap: nowrap">
+      <div class="item" style="flex-grow: 0">flex-grow: 1</div>
+      <div class="item" style="flex-grow: 1">flex-grow: 1</div>
+      <div class="item" style="flex-grow: 2">flex-grow: 2</div>
+      <div class="item" style="flex-grow: 3">flex-grow: 3</div>
+      <div class="item" style="flex-grow: 4">flex-grow: 4</div>
+      <div class="item" style="flex-grow: 5">flex-grow: 5</div>
+    </div>
+
+    <hr />
+    <h3>
+      Let us understand "flex-shrink" property, its default value is 1, when we
+      set this value as 0, the item will not shrink (best understood with
+      variying width)
+    </h3>
+    <hr />
+    <h5>
+      Flex-grow defines the rate with with the elements will increase its size
+      on change of dimension of its parent
+    </h5>
+    <div class="container1" style="flex-wrap: nowrap">
+      <div class="item" style="flex-shrink: 0; width: 200px">
+        flex-shrink: 0
+      </div>
+      <div class="item" style="flex-shrink: 3; width: 200px">
+        flex-shrink: 3
+      </div>
+      <div class="item" style="flex-shrink: 10; width: 200px">
+        flex-shrink: 10
+      </div>
+    </div>
+    <h5>
+      Greater the value of flex-shrink, the faster it will reduce its size when
+      there is no space
+    </h5>
+    <hr />
+    <h3>
+      We can also provide flex-grow and flex-shrink property using a single
+      style element i.e., flex:"flex-grow value" "flex-shrink value";
+    </h3>
+  </body>
+</html>
