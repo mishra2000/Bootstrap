@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    /> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Flexbox Container properties</title>
+    <style>
+      .container1 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: aquamarine;
+        display: flex;
+      }
+      .container2 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: aquamarine;
+        display: inline-flex;
+      }
+      .container3 {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: aquamarine;
+        display: flex;
+        height: 400px;
+      }
+      .item {
+        padding: 20px;
+        background: brown;
+        text-align: center;
+        color: black;
+        margin: 10px;
+      }
+      .width70 {
+        width: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Below example uses Container of display:flex (Container will use full
+      width available)
+    </h3>
+    <hr />
+    <div class="container1">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+
+    <h3>
+      Below example uses Container of display:inline-flex(Container will use
+      required width only)
+    </h3>
+    <hr />
+    <div class="container2">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+
+    <h3>
+      Below example uses Container of flex-direction :row-reverse (default flex
+      direction is row, items inside Container also reverses its direction)
+    </h3>
+    <hr />
+    <div class="container1" style="flex-direction: row-reverse">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h3>
+      Below example uses Container of flex-direction :column (default flex
+      direction is row) <br />FlexItem in column take full width of its parent
+      container
+    </h3>
+    <hr />
+    <div class="container1" style="flex-direction: column">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h3>
+      Below example uses Container of flex-direction :column-reverse (default
+      flex direction is row , items inside Container also reverses its
+      direction) <br />FlexItem in column take full width of its parent
+      container
+    </h3>
+    <hr />
+    <div class="container1" style="flex-direction: column-reverse">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+
+    <h3>
+      Below example uses Container of flex-wrap:nowrap(decrease window width to
+      show the error we are going to eliminate)
+    </h3>
+    <hr />
+    <div class="container1" style="flex-wrap: nowrap">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h3>
+      Below example uses Container of flex-wrap:wrap(decrease window width to
+      show the solution of above problem)
+    </h3>
+    <hr />
+    <div class="container1" style="flex-wrap: wrap">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <hr />
+    <h3>
+      Flex-direction and flex-wrap and be condensed into one style by using
+      flex-flow:"value for flex-direction" "value for flex-wrap"
+    </h3>
+    <hr />
+    <h3>Below example uses Container of justify-content:</h3>
+    <hr />
+    <h4>justify-content:flex-start</h4>
+    <div class="container1" style="justify-content: flex-start">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h4>justify-content:center</h4>
+    <div class="container1" style="justify-content: center">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h4>justify-content:flex-end</h4>
+    <div class="container1" style="justify-content: flex-end">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h4>justify-content:space-between</h4>
+    <div class="container1" style="justify-content: space-between">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h4>justify-content:flex-around</h4>
+    <div class="container1" style="justify-content: space-around">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h4>justify-content:flex-evenly</h4>
+    <div class="container1" style="justify-content: space-evenly">
+      <div class="item item1">ELement 1</div>
+      <div class="item item2">Element 2</div>
+      <div class="item item3">Element 3</div>
+      <div class="item item4">Element 4</div>
+      <div class="item item5">Element 5</div>
+    </div>
+    <h2>Note: Justify Content also works in column</h2>
+    <span>Example not shown here</span>
+
+    <h2>
+      Next property is align-items, this property works along cross axis
+      (default value is "align-items: stretch")
+    </h2>
+    <hr />
+    <h4>align-items:flex-stretch</h4>
+    <div class="container3" style="align-items: stretch">
+      <div class="item item1 width70">ELement 1</div>
+      <div class="item item2 width70">Element 2</div>
+      <div class="item item3 width70">Element 3</div>
+      <div class="item item4 width70">Element 4</div>
+      <div class="item item5 width70">Element 5</div>
+    </div>
+    <h4>align-items:flex-start</h4>
+    <div class="container3" style="align-items: flex-start">
+      <div class="item item1 width70">Element 1</div>
+      <div class="item item2 width70">Element 2</div>
+      <div class="item item3 width70">Element 3</div>
+      <div class="item item4 width70">Element 4</div>
+      <div class="item item5 width70">Element 5</div>
+    </div>
+    <h4>align-items:center</h4>
+    <div class="container3" style="align-items: center">
+      <div class="item item1 width70">Element 1</div>
+      <div class="item item2 width70">Element 2</div>
+      <div class="item item3 width70">Element 3</div>
+      <div class="item item4 width70">Element 4</div>
+      <div class="item item5 width70">Element 5</div>
+    </div>
+    <h4>align-items:flex-end</h4>
+    <div class="container3" style="align-items: flex-end">
+      <div class="item item1 width70">Element 1</div>
+      <div class="item item2 width70">Element 2</div>
+      <div class="item item3 width70">Element 3</div>
+      <div class="item item4 width70">Element 4</div>
+      <div class="item item5 width70">Element 5</div>
+    </div>
+    <h4>align-items:baseline</h4>
+    <div class="container3" style="align-items: baseline">
+      <div class="item item1 width70" style="font-size: 20px">Element</div>
+      <div class="item item2 width70">Element 2</div>
+      <div class="item item3 width70">Element 3</div>
+      <div class="item item4 width70">Element 4</div>
+      <div class="item item5 width70">Element 5</div>
+    </div>
+    <h2>Note: align-items also works in column</h2>
+    <span>Example not shown here</span>
+  </body>
+</html>
